@@ -6,9 +6,9 @@ function App() {
   return (
     <>
     <NavBar/>
-    <ItemListContainer greeting={"ALOH"}/>
-    <div className="App">
-    </div>
+    <ItemListContainer mensaje={"ALOH"}/>
+    {/* <div className="App">
+    </div> */}
     </>
   );
 }

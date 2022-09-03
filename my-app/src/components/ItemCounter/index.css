@@ -1,0 +1,15 @@
+.buttons-handle{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-gen{
+    display: grid;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+}
+
+.buttons-gen h2{
+    justify-content: center;
+}
