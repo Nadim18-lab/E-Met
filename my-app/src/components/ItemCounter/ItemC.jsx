@@ -2,9 +2,9 @@ import React from 'react'
 import { useState } from 'react';
 import './index.css';
 
-const ItemC = ({initial, stock,onAdd}) => {
+const ItemC = ({stock,onAdd}) => {
 
-    const[count ,setCount]= useState(initial);
+    const[count ,setCount]= useState(1);
 
     const addCart = ()=>{
         onAdd(count)

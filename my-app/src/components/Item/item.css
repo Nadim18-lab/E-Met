@@ -1,0 +1,17 @@
+.card{
+    max-width: 300px;
+    border: solid 5px #000;
+    
+}
+
+.card-img-top{
+    border:solid 25px;
+    border-radius: 0;
+}
+
+.card-text{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Metal Mania', cursive;
+}

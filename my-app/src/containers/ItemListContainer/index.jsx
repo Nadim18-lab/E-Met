@@ -1,18 +1,35 @@
 import React from 'react'
-import ItemC from '../../components/ItemCounter/ItemC'
+import { useState,useEffect} from 'react'
+import ItemList from '../../components/ItemList/itemList'
+import {vinyl } from '../../Vinyls/vinil'
 
 const ItemListContainer = ({mensaje}) => {
 
-  const agrerarCarrito = (cantidad) =>{
-    console.log(`se ha agregado la cantidad ${cantidad} al carrito`)
-  }
+  const [vinyls , setVinyls]= useState([])
 
-  return (
-    <div className='item-list-container'>
-      <h1>{mensaje}</h1>
-      <ItemC initial={1} stock={10} onAdd={agrerarCarrito}/>
+  useEffect(()=> {
+    (async ()=> {
+    const obtainVinyl = new Promise ((accept, reject)=> {
+        setTimeout(()=> {
+          accept(vinyl)
+        }, 1000);
+      })
+
+        try {
+          const vinyls = await obtainVinyl;
+          setVinyls(vinyls);
+        } catch (error) {
+          console.log(error);
+        }
+
+      })()
+
+  }, [])
+
+  return(
+    <div>
+      <ItemList vinyl={vinyls}/>
     </div>
-
   )
 }
 
