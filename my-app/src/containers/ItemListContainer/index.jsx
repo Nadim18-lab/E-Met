@@ -1,22 +1,29 @@
 import React from 'react'
 import { useState,useEffect} from 'react'
-import ItemList from '../../components/ItemList/itemList'
-import {vinyl } from '../../Vinyls/vinil'
+import ItemList from '../../components/ItemList/ItemList'
 
-const ItemListContainer = ({mensaje}) => {
+const ItemListContainer = () => {
 
   const [vinyls , setVinyls]= useState([])
 
   useEffect(()=> {
     (async ()=> {
-    const obtainVinyl = new Promise ((accept, reject)=> {
-        setTimeout(()=> {
-          accept(vinyl)
-        }, 1000);
-      })
+
+      // const getVinyl = new Promise((accept,reject) => {
+      //   setTimeout(()=>{
+      //     accept(vinyls)
+      //   },1000)
+      // })
+
+      // getVinyl.then((result)=>{
+      //   console.log(result)
+      //   setVinyls(result)
+      // })
+      // .catch((error) => console.log(error))
 
         try {
-          const vinyls = await obtainVinyl;
+          const response = await fetch('../../../mocks/vinyl.json');
+          const vinyls = await response.json();
           setVinyls(vinyls);
         } catch (error) {
           console.log(error);

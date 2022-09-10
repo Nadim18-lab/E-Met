@@ -1,8 +1,8 @@
 import React from 'react'
-import Item from '../Item/item'
+import Item from '../Item/Item.jsx'
 import './itemList.css'
 
-const itemList = ({vinyl}) => {
+const ItemList = ({vinyl}) => {
   return (
     <div className='cards-container'>
       {vinyl.map(vinyl =>{
@@ -12,4 +12,4 @@ const itemList = ({vinyl}) => {
   )
 }
 
-export default itemList
+export default ItemList
