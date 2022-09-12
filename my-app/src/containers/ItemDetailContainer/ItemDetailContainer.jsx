@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
-import ItemDetail from '../../components/ItemDetail/ItemDetail'
+import ItemDetail from '../../components/ItemDetail/ItemDetail.jsx'
 
 const ItemDetailContainer = () => {
     const [vinylDetail ,setVinylDetail]=useState({})
@@ -15,7 +15,6 @@ const ItemDetailContainer = () => {
             const response =await fetch('../../../mocks/vinyl.JSON');
             const data = await response.json();
             const dataDetail = data.filter(vinyl=>vinyl.id === vinylId)
-            console.log(dataDetail)
             setVinylDetail(dataDetail)
         } catch (error){
             console.log(error);
@@ -24,7 +23,14 @@ const ItemDetailContainer = () => {
     }, [vinylId])
 
   return (
-    <ItemDetail vinyl={vinylDetail}/>
+    <>
+    {Object.keys(vinylDetail).length === 0 ? (
+      <h1>Loading Vinyl</h1>
+    ):(
+      <ItemDetail vinyl={vinylDetail}/>
+    )}
+  </>
+    
   )
 }
 export default ItemDetailContainer

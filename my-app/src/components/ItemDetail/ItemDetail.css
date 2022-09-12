@@ -1,0 +1,28 @@
+.Container-detail{
+    font-family: 'Metal Mania', cursive;
+    display:grid;
+    justify-items: stretch;
+}
+
+.cards-container{
+    grid-template-columns: repeat(3,2fr);
+    row-gap: 20px;
+}
+
+.Container-titulo{
+    text-align: center;
+}
+
+.Container-img{
+    justify-self: center;
+    border: solid 5px #000;
+    width: 350px;
+}
+
+.Container-detail h4{
+    text-align: center;
+}
+
+.Container-text{
+
+}

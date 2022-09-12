@@ -1,5 +1,20 @@
 [
-    {"id":"1" ,"band":"Deftones","name":"White Pony","genre":"Nu metal","price":"$30","img":"../assets/img/white_pony.jpg","stock":10},
-    {"id":"2" ,"band":"Avenged Sevenfold","name":"The Stage","genre":"Hard Rock","price":"$25","img":"../assets/img/the_stage_A7X.jpg","stock":10},
-    {"id":"3" ,"band":"Oceans Ate Alaska","name":"Disparity","genre":"Modern Metalcore","price":"$40","img":"../assets/img/Disparity-Oceans-Ate-Alaska.jpg","stock":10}
+    {"id":"1" ,"band":"Deftones","name":"White Pony","genre":"Nu metal","price":"$30","img":"../assets/img/white_pony.jpg","stock":10,
+    "info":"1.Back to School(Mini Maggit) / 2.Feiticeira / 3.Digital Bath / 4.Elite / 5.Rx Queen / 6.Street Carp / 7.Teenager / 8.Knife Prty / 9.Korea / 10.Passenger / 11.Change(In the House of Flies) / 12.Pink Maggit"},
+
+    {"id":"2" ,"band":"Avenged Sevenfold","name":"The Stage","genre":"Hard Rock","price":"$25","img":"../assets/img/the_stage_A7X.jpg","stock":10,
+    "info":"1.The Stage / 2.Paradigm / 3.Sunny Disposition / 4.God Damn / 5.Creating God / 6.Angels / 7.Simulation / 8.Higher / 9.Roman Sky / 10.Fermi Paradox / 11.Exist"},
+
+    {"id":"3" ,"band":"Oceans Ate Alaska","name":"Disparity","genre":"Modern Metalcore","price":"$40","img":"../assets/img/Disparity-Oceans-Ate-Alaska.jpg","stock":10,
+    "info":"1.Paradigm / 2.Nova / 3.Metamorph / 4.Shallow Graves / 5.Sol / 6.Dead Behind the Eyes / 7.Plague Speech / 8.Disparity - Interlude / 9.Empty Space / 10.New Dawn / 11.Hallucinogen"},
+
+    {"id":"4" ,"band":"Vildhjarta","name":"Måsstaden under vatten","genre":"Thall","price":"$35","img":"../assets/img/Massteden-Vildhjarta.jpg","stock":10,
+    "info":"1.Lavender Haze / 2.När de du älskar kommer tillbaka från de döda / 3.Kaos2 / 4.Toxin / 5.Brännmärkt / 6.Den helige anden (under vatten) / 7.Passage Noir / 8.Måsstadens nationalsång (under vatten) / 9.Heartsmear / 10.Vagabond / 11.Mitt trötta hjarta / 12.Detta drömmars sköte en slöja till ormars näste / 13.Phantom assassin / 14.Sunset Sunrise / 15.Sunset Sunrise Sunset Sunrise / 16.Penny Royal Poison / 17.Paaradiso"},
+
+    {"id":"5" ,"band":"Ice Nine Kills","name":"The Silver Scream","genre":"Metalcore","price":"$30","img":"../assets/img/The-Silver-Scream_INK.jpg","stock":10,
+    "info":"1.The American Nightmare / 2.Thank God It's Friday / 3.Stabbing in The Dark / 4.SAVAGES / 5.The Jig is Up / 6.A Grave Mistake / 7.Rocking The Boat / 8.Enjoy Your Slay / 9.Freak Flag / 10.The World in My Hands / 11.Merry Axe-Mas / 12.Loves Bites / 13.IT is The End"},
+
+    {"id":"6" ,"band":"Whitechapel","name":"The Valley","genre":"Deathcore","price":"$30","img":"../assets/img/The-Valley_Whitechapel.jpg","stock":10,
+    "info":"1.When a Demon Defiles a Witch / 2.Forgiveness is Weakness / 3.Brimstone / 4.Hickory Creek / 5.Black Bear / 6.We Are One / 7.The Other Side / 8.Third Depth / 9.Lovelace / 10.Doom Woods"}
+
 ]
