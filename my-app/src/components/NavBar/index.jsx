@@ -2,6 +2,8 @@ import React from 'react'
 import Cart from '../CartWidget/Cart'
 import './styles.css'
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import {Shop} from '../../context/ShopProvider'
 // import useLocalStorage from 'use-local-storage'
 
 const NavBar = () => {
@@ -11,7 +13,8 @@ const NavBar = () => {
   //   const newTheme = theme ==='light' ? 'dark':'light';
   //   setTheme(newTheme)
   // }
-  
+  const value = useContext(Shop)
+
   return (
     // data-theme={theme}
          <nav className="navbar navbar-expand-lg navbar-light menu" >
